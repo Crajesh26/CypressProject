@@ -1,0 +1,59 @@
+npx cypress run
+
+
+//it will prvoide ss,video, once execution is over
+//Command is same for all pipeline like jenkis and aws
+
+//to run specific file run, cypress run --spec "
+(enrollpage.cy.js, first.cy.js, homepage.cy.js, login.cy.js, registrat │
+  │                 ion.cy.js, spec.cy.js)
+
+
+//to run all the spec files inside one folder "cypress/e2e/login/**/*"
+
+
+
+//to run in headed mode npx cypress run --spec "cypress/e2e/firstcypress.cy.js" --headed
+
+
+//to run in headed mode with no exit npx cypress run --spec "cypress/e2e/firstcypress.cy.js" --headed --no-exit
+
+
+// we can run through tag name whatever specf file need to be executed
+
+
+// to run in specific browser npx cypress run --spec "" --no-exit --headed--browser=chrome
+
+// to do mouserover activity "npm install cypress-real-events"
+
+//to File Upload Activity  "npm install --save-dev cypress-file-upload"
+
+
+
+
+
+//cypress.io in Plugins available where you can get the below command for report
+to install mochaawesome report "npm i --save-dev cypress-mochawesome-reporter"
+
+reporter: 'cypress-mochawesome-reporter'
+
+import "cypress-file-upload"; 
+require('cypress-mochawesome-reporter/plugin')(on);
+
+
+////json  java script object notation it is key value pair combination . whatever avaialble in json all are object it exchange data form server to browser, browser to server
+easy is to read and understand
+
+
+//when we run in terminal , Mocha will prvoide default report
+
+
+
+
+
+
+
+
+
+
+

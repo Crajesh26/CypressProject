@@ -1,0 +1,205 @@
+1 development - CLI - command
+2.Execution - on Demand
+3.Automatic execution - nightmare(CI servere)
+4.Event - Smoke,Regression,E2E
+
+
+machine system container
+
+we can run our script in two ways
+
+One is in local
+Second one is one cloud
+
+Cloud
+Aws
+Gcp
+Azure
+Ali cloud
+
+Branches in GitHub
+Devlop
+QA
+Stage
+Production
+
+Device System for execution
+BrowserStack
+LambdaTest
+SauceLab
+
+BrowserStack::
+
+machine:
+windows10
+windows11
+windows7
+
+device:
+iphone devie
+Androd device
+
+Docker::
+
+
+
+
+
+CI CD: Jenkins Git GitHubGi
+
+Git is called Distrubted Version Control System
+
+
+Common Repo: Rajesh brach
+             Mani Branch
+             Ganesh Branch   
+
+To download Jenkins
+Go to Jenkins website - download - download jenkins.war file as per java version
+
+once jenkins downloaded, Use this command in cmd
+java -jar C:\Users\Dell\Downloads\jenkins.war 
+
+Note:Jenkisn as default , will run port 8080, if some times port 8080 is occupied, then we have to use port 8081 java -jar C:\Users\Dell\Downloads\jenkins.war --httpPort=8081
+
+
+1. Access Jenkins via
+
+http://127.0.0.1:8080
+http://localhost:8080
+
+2.Password- Secret key
+461e794a6a1c4ad1abe7648b4363580d(you take from Command Prompt)
+
+3.click on suggested plugins
+
+4.Enter all basic details 
+
+5.name email password etc
+
+6.username -Rajesh password - Rajesh@90031 fullname - RajeshChinnappan
+
+7.Once done click on Manage jenkins
+
+To set the number of execution go to "System Configuration" and and enter number(ex 2 or 3 or 4) in # of executors
+
+To download any plugins - Manage Jenkins - Manage Plugins - Available -
+
+Build and job and project are same in jenkins
+
+To create a new job - New item - give name - Freestyle project - Ok 
+
+In Description give "This is for testing"
+
+in Build Steps, select "Execute Windows batch command" and enter node -v
+
+go to google account "my google account" and click on Security and click on App Password and  enter password 
+and Select app "Mail" and Select device "Window Computer" and Generate and copy the pass word "xnwmrrogcaplwupf"
+
+Once done go to "Manage Jenkins" and "Configure System" and "E-mail Notification" and STMP server "smtp.gmail.com"(if it is organistaion we have to get IP address with port number from IT team)
+and Default user e-mail suffix ? "@gmail.com" and SMTP Port "465" (if it is not working go with "587") and Select "Use SSL" and Use SMTP Authentication - user name "enter email ID" and password "App Passcode"
+
+
+
+Once done enter email id in Test configuration by sendingtest e-mail
+
+Onece done go to "Extended E-mail Notification" and SMTP server "smtp.gmail.com" and SMTP Port "465" and click on "Add"
+and enter username "rajeshc2391@gmail.com" and enter App passcode "xnwmrrogcaplwupf"
+
+go to Default Triggers and select "Failure- Any" and click on Save btn
+
+
+Once done go to item "Cypress"(what ever item we have created) and click on configure and click on "Post-build Actions"
+and Select "Editable email option" and Project Receipent List "Rajeshc2391@gmail.com" and default subject "Cypress Testing"
+and click on Advanced settings under Content Token Refrence and keep "Recipient List" only under Triggers and click on Save
+
+
+CornTab guru.com for Jenkins scheduling time
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+Git Tutorial
+
+control version:
+
+     Repositry - (wc) Dev one
+               -  (wc) Dev Two
+               - (wc) Dev Three
+
+disturber control version:
+
+Repositry      -(git) local repositry- (wc) Dev one
+               -(git) local repositry- (wc) Dev Two
+               -(git) local repositry-(wc) Dev Three
+
+
+
+Whenever we do commit, it will create version for us
+
+
+Download Git:
+
+ Steps:go to this site "https://git-scm.com/download/win"
+
+Steps for GitHub through HTTPS
+1.go to the directory where you want to init C:\Users\Dell\Desktop\CypressEveningGitt
+2.git init to create a repositry
+3.git config --global user.email "rajeshc2391@gmail.com"
+4.git add
+5.git commit -m "dsfsf"
+6.create a new repo in Github
+7.git remote add origin https://github.com/Crajesh26/SampleGithubRepoTest.git(to connect with remote repositry)
+8.git push -u origin master(6C07-DF4E)
+
+Steps for GitHub through SSH:
+
+1.ssh-keygen 2. go to the directory where ssh key generated and copy and paste in SSH and CPG keys in Setting in Github repo
+
+1.go to the directory where you want to init C:\Users\Dell\Desktop\CypressEveningGitt
+2.git init to create a repositry
+3.git config --global user.email "rajeshc2391@gmail.com"
+4.git add
+5.git commit -m "dsfsf"
+6.create a new repo in Github
+7.git remote add origin https://github.com/Crajesh26/SampleGithubRepoTest.git(to connect with remote repositry)
+8.git push -u origin master
+
+The main diffrence between HTPP and SSH is in HTTP and we have to enter username and password , in SSH , we have to prvoide SSH key
+
+
+	
+
+
+
+
+
+    
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
