@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "\t"
+    "test": "t",
+    "smoke": "cypress run --spec ./cypress/e2e/spec.cy.js",
+    "endToend": "cypress run"
   },
   "author": "Rajesh",
   "license": "ISC",
